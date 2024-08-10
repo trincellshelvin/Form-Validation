@@ -1,0 +1,11 @@
+#username {
+    background-color: aqua;
+}
+
+#username:invalid {
+    background-color: pink;
+}
+
+#username:valid {
+    background-color: blueviolet;
+}
