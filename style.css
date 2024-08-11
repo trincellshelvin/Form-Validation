@@ -9,3 +9,13 @@
 #username:valid {
     background-color: blueviolet;
 }
+
+#javascriptValidation {
+    border-style: dotted;
+    color: blueviolet;
+    width: fit-content;
+}
+
+#requirements {
+    margin-left: 4%;
+}
