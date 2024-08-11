@@ -10,7 +10,15 @@ function hasI(userName){
     if(userName.includes("i")){
         return true;
     } else{
-        return false
+        return false;
+    }
+}
+
+function tooLong(userName){
+    if(userName.length > 20){
+        return true;
+    } else{
+        return false;
     }
 }
 

@@ -9,6 +9,8 @@
 </head>
 
 <body>
+    <!--This form as basic HTML5 validation for required fields with having a minimum and maximum length for the input field
+    for both username and password. All input fields are also required.-->
     <div id="html5validation">
         <form action="index.html">
             <label for="Username">Username</label>
@@ -18,7 +20,7 @@
             <input type="text" required name="email">
             <br><br>
             <label for="password">Password</label>
-            <input type="text" required>
+            <input type="text" required minlength="5" maxlength="20">
             <input type="submit" value="Submit">
         </form>
     </div>
@@ -26,13 +28,13 @@
     <div id="javascriptValidation">
         <form name="myForm" action="index.html" onsubmit="return validateForm()" method="post">
             <label for="Username id=" userName">Username</label>
-            <input required type="text" name="firstName" id="firstName">
+            <input required type="text" name="firstName" id="firstName" minlength="5" maxlength="20">
             <br><br>
             <label for="email" id="email">Email</label>
             <input required type="text" name="email" id="emailAddress">
             <br><br>
             <label for="password" id="paSsword">Password</label>
-            <input required type="password" name="password" id="password">
+            <input required type="password" name="password" id="password" minlength="5" maxlength="20">
             <input type="submit" value="Submit">
         </form>
     </div>
