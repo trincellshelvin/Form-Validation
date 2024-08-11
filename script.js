@@ -44,7 +44,7 @@ function handleChangeInI(){
 firstNameInput.addEventListener("input", handleChangeinuserName)
 firstNameInput.addEventListener("input", handleChangeInI)
 
-function validateEmailInput(email) {
+function validateEmailInput(emailAddress) {
     const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-    return emailRegex.test(email);
+    return emailRegex.test(emailAddress);
 }
