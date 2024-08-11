@@ -9,22 +9,31 @@
 </head>
 
 <body>
-    <form action="index.html">
-        <label for="Username">Username</label>
-        <input type="text" required name="username" id="username" minlength="5" maxlength="20">
-        <input type="submit" value="Click">
-    </form>
+    <div id="html5validation">
+        <form action="index.html">
+            <label for="Username">Username</label>
+            <input type="text" required name="username" id="username" minlength="5" maxlength="20">
+            <br><br>
+            <label for="emailAddress">Email</label>
+            <input type="text" required name="email">
+            <br><br>
+            <label for="password">Password</label>
+            <input type="text" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
     <br><br><br>
     <div id="javascriptValidation">
-        <form action="index.html">
-            <label for="Username id="userName">Username</label>
-            <input type="text" name="firstName" id="firstName">
+        <form name="myForm" action="index.html" onsubmit="return validateForm()" method="post">
+            <label for="Username id=" userName">Username</label>
+            <input required type="text" name="firstName" id="firstName">
             <br><br>
             <label for="email" id="email">Email</label>
-            <input type="text" name="email" id="emailAddress">
+            <input required type="text" name="email" id="emailAddress">
             <br><br>
             <label for="password" id="paSsword">Password</label>
-            <input type="password" name="password" id="password">
+            <input required type="password" name="password" id="password">
+            <input type="submit" value="Submit">
         </form>
     </div>
     <div id="requirements">
