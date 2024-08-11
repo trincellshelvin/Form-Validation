@@ -30,3 +30,16 @@ function handleChangeinuserName(){
         console.log("Username must be more than 5 characters")
     }
 }
+
+function handleChangeInI(){
+    let input = firstNameInput.value;
+    let i = hasI(input);
+    if(i){
+        hasI.style.color = "green";
+    } else {
+        hasI.style.color = "red";
+    }
+}
+
+firstNameInput.addEventListener("input", handleChangeinuserName)
+firstNameInput.addEventListener("input", handleChangeInI)
