@@ -31,12 +31,20 @@ function handleChangeInUsername() {
     console.log("hello!");
     let input = firstNameInput.value;
     let isShort = tooShort(input);
+    let isLong = tooLong(input)
     if (isShort) {
-        tooShortElement.style.color = "green";
+        tooshortElement.style.color = "green";
         console.log("✔ username meets requirements!");
     } else {
-        tooShortElement.style.color = "pink";
+        tooshortElement.style.color = "pink";
         console.log("username must be more than 5 characters");
+    }
+    if (isLong){
+        toolongElement.style.color = "orange";
+        console.log("&#x2715 username is too long!")
+    } else {
+        toolongElement.style.color = "green";
+        console.log("&#x2713 username meets requirements!")
     }
 }
 
