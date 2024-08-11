@@ -1,7 +1,7 @@
 function tooShort(userName){
     if(userName.length < 5){
         return true;
-    }else{
+    } else{
         return false;
     }
 }
@@ -14,30 +14,30 @@ function hasI(userName){
     }
 }
 
-let tooShort = document.getElementById("tooShort");
-let hasI = document.getElementById("hasI");
+let toosHort = document.getElementById("tooShort");
+let haSi = document.getElementById("hasI");
 let firstNameInput = document.getElementById("firstName");
 
 function handleChangeinuserName(){
     console.log("Hello!")
     let input = firstNameInput.value;
-    let isShort = tooShort(input);
+    let isShort = toosHort(input);
     if(isShort){
-        tooShort.style.color = "green";
+        toosHort.style.color = "green";
         console.log("&#x2713 Username is meets requirements!")
     } else{
-        tooShort.style.color = "pink";
+        toosHort.style.color = "pink";
         console.log("Username must be more than 5 characters")
     }
 }
 
 function handleChangeInI(){
     let input = firstNameInput.value;
-    let i = hasI(input);
+    let i = haSi(input);
     if(i){
-        hasI.style.color = "green";
+        haSi.style.color = "green";
     } else {
-        hasI.style.color = "red";
+        haSi.style.color = "red";
     }
 }
 
