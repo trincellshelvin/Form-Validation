@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form-Validation</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <form action="index.html">
         <label for="Username">Username</label>
-        <input type="text" required name="username" id="username"  minlength="5" maxlength="20">
+        <input type="text" required name="username" id="username" minlength="5" maxlength="20">
         <input type="submit" value="Click">
     </form>
-
+    <br><br><br>
+    <div>
+        <form action="index.html">
+            <label for="Username id="userName">Username</label>
+            <input type="text" name="firstName" id="firstName">
+        </form>
+    </div>
+    <div>
+        <p id="tooShort">&#x2713 Username is Too Short</p>
+        <p id="hasI"> &#x2713 Username has an I</p>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
