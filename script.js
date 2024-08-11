@@ -1,56 +1,57 @@
-function tooShort(userName){
-    if(userName.length < 5){
+function tooShort(username) {
+    if (username.length < 5) {
         return true;
-    } else{
-        return false;
-    }
-}
-
-function hasI(userName){
-    if(userName.includes("i")){
-        return true;
-    } else{
-        return false;
-    }
-}
-
-function tooLong(userName){
-    if(userName.length > 20){
-        return true;
-    } else{
-        return false;
-    }
-}
-
-let toosHort = document.getElementById("tooShort");
-let haSi = document.getElementById("hasI");
-let firstNameInput = document.getElementById("firstName");
-
-function handleChangeinuserName(){
-    console.log("Hello!")
-    let input = firstNameInput.value;
-    let isShort = toosHort(input);
-    if(isShort){
-        toosHort.style.color = "green";
-        console.log("&#x2713 Username is meets requirements!")
-    } else{
-        toosHort.style.color = "pink";
-        console.log("Username must be more than 5 characters")
-    }
-}
-
-function handleChangeInI(){
-    let input = firstNameInput.value;
-    let i = haSi(input);
-    if(i){
-        haSi.style.color = "green";
     } else {
-        haSi.style.color = "red";
+        return false;
     }
 }
 
-firstNameInput.addEventListener("input", handleChangeinuserName)
-firstNameInput.addEventListener("input", handleChangeInI)
+function hasI(username) {
+    if (username.includes("i")) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function tooLong(username) {
+    if (username.length > 20) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+let tooshortElement = document.getElementById("tooshort");
+let hasiElement = document.getElementById("hasi");
+let firstnameInput = document.getElementById("firstname");
+let toolongElement = document.getElementById("toolong")
+
+function handleChangeInUsername() {
+    console.log("hello!");
+    let input = firstNameInput.value;
+    let isShort = tooShort(input);
+    if (isShort) {
+        tooShortElement.style.color = "green";
+        console.log("✔ username meets requirements!");
+    } else {
+        tooShortElement.style.color = "pink";
+        console.log("username must be more than 5 characters");
+    }
+}
+
+function handleChangeInI() {
+    let input = firstNameInput.value;
+    let i = hasI(input);
+    if (i) {
+        hasIElement.style.color = "green";
+    } else {
+        hasIElement.style.color = "red";
+    }
+}
+
+firstNameInput.addEventListener("input", handleChangeInUsername);
+firstNameInput.addEventListener("input", handleChangeInI);
 
 function validateEmailInput(emailAddress) {
     const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
@@ -58,9 +59,9 @@ function validateEmailInput(emailAddress) {
 }
 
 function validateForm() {
-    let x = document.forms["myForm"]["firstName"].value;
+    let x = document.forms["myform"]["firstname"].value;
     if (x == "") {
-      alert("Name must be filled out");
-      return false;
+        alert("name must be filled out");
+        return false;
     }
-  }
+}
