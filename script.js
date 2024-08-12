@@ -38,6 +38,7 @@ function handleChangeInUsername() {
     } else {
         tooshortElement.style.color = "pink";
         console.log("username must be more than 5 characters");
+    
     }
     if (isLong){
         toolongElement.style.color = "orange";
@@ -58,9 +59,6 @@ function handleChangeInI() {
     }
 }
 
-firstNameInput.addEventListener("input", handleChangeInUsername);
-firstNameInput.addEventListener("input", handleChangeInI);
-
 function validateEmailInput(emailAddress) {
     const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     return emailRegex.test(emailAddress);
@@ -73,3 +71,6 @@ function validateForm() {
         return false;
     }
 }
+
+firstNameInput.addEventListener("input", handleChangeInUsername);
+firstNameInput.addEventListener("input", handleChangeInI);
