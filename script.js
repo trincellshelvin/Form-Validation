@@ -22,10 +22,7 @@ function tooLong(username) {
     }
 }
 
-let tooshortElement = document.getElementById("tooshort");
-let hasiElement = document.getElementById("hasi");
-let firstNameInput = document.getElementById("firstname");
-let toolongElement = document.getElementById("toolong")
+importScripts<script src="script.js" type="module"></script>
 
 function handleChangeInUsername() {
     console.log("hello!");
