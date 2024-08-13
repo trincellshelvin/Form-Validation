@@ -22,7 +22,7 @@ function tooLong(username) {
     }
 }
 
-importScripts<script src="script.js" type="module"></script>
+import{} from "./modules/eventlisteners.js";
 
 function handleChangeInUsername() {
     console.log("hello!");
