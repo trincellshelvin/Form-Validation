@@ -61,6 +61,7 @@ function validateEmailInput(emailAddress) {
     return emailRegex.test(emailAddress);
 }
 
+
 function validateForm() {
     let x = document.forms["myform"]["firstname"].value;
     if (x == "") {
